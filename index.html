@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+  </head>
+  <body>
+    <app-drawer name="Open Drawer"
+      >This is a custom drawer web component</app-drawer
+    >
+    <app-card>This is a custom card web component</app-card>
+    <app-user-card
+      name="John Doe"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <div slot="email">johndoe@gmail.com</div>
+      <div slot="phone">555-555-555</div>
+    </app-user-card>
+    <app-user-card
+      name="Jane Doe"
+      avatar="https://randomuser.me/api/portraits/women/1.jpg"
+    >
+      <div slot="email">janedoe@gmail.com</div>
+      <div slot="phone">777-777-777</div></app-user-card
+    >
+    <script src="app-card/app-card.js"></script>
+    <script src="app-drawer/app-drawer.js"></script>
+    <script src="app-user-card/app-user-card.js"></script>
+  </body>
+</html>
