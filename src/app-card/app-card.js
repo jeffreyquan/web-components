@@ -1,18 +1,13 @@
+import html from "./app-card.html";
+import css from "./app-card.css";
+
 const appCardtTemplate = document.createElement("template");
 
 appCardtTemplate.innerHTML = `
 <style>
- .card {
-   padding: 16px;
-  background-color: grey;
-  border-radius: 4px;
-  width: 200px;
-  height: 200px;
- }
+${css}
 </style>
-<div class="card">
-  <slot></slot>
-</div>
+${html}
 `;
 
 class AppCard extends HTMLElement {
